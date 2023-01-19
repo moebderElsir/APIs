@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding:0px;
+  margin:0px;
+  font-family: Helvetica;
+}
+form{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding:1.2em;
+flex: 1 1 100%;
+}
+section{
+  width:70%;
+  margin: 1rem auto;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+}
+span{
+  width:40px;
+  line-height: 40px;
+  text-align: center;
+  height:40px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(36, 35, 35);
+}
+.submit{
+  background-color: crimson;
+}
+span:hover{
+  transition:.5s ease-in-out ;
+  background-color: #00f;
+}
+.submit:hover{
+  background-color: #0f0;
+}
+input{
+  cursor: pointer;
+}
+.count {
+  cursor: text;
+  outline: none;
+  text-align: center;
+  border: none;
+  font-size: 1rem;
+  font-weight: 900;
+}
+table{
+  width:70%;
+  min-height: 32vh;
+  margin: 5rem auto;
+  user-select: none;
+
+}
+table tr{ 
+  padding:0px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+td{
+  display: block;
+  height:80px;
+  padding-top: 20px;
+}
+.thead{
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: crimson;
+  color: #fff;
+}
+
+table tr.thead td{
+  flex: 1 1 20%;
+  height:50px;
+  padding-top:20px;
+}
+table tbody tr td{
+  flex: 1 1 20%;
+  min-height: 60px;
+ padding-top:80px
+ border:1px solid #000
+}
+table .table_data tr:nth-child(odd){
+  background-color: #eee;
+}
+footer{
+  text-align: center;
+  padding: 1em;
+  background-color: crimson;
+  color: #fff;
+}
